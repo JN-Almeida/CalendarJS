@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="Content/css/main.css">
+</head>
+<body>
+    <header class="page-heading" data-grid="small-spacing center start">
+        <h1 data-cell="shrink">Calendar</h1>
+    </header>
+    <div data-grid="spacing">
+        <div class="events" data-cell="1of2">
+    
+        </div>
+    
+        <div class="calendario" data-cell="shrink">
+            <div class="calendario-top" data-text="center">
+                <h3 class="mes"></h3>
+                <p class="data"></p>
+                <div class="prev" data-grid="center">@Html.Icone("prev")</div>
+                <div class="next" data-grid="center">@Html.Icone("next")</div>
+            </div>
+            <div class="dia-semana" data-grid="row" data-text="center">
+                <div>Dom</div>
+                <div>Seg</div>
+                <div>Ter</div>
+                <div>Qua</div>
+                <div>Qui</div>
+                <div>Sex</div>
+                <div>Sab</div>
+            </div>
+            <div data-grid="wrap row" id="calendario-dias">
+    
+    
+            </div>
+        </div>
+    </div>
+
+
+    <script src="Content/js/main.js"></script>
+</body>
+</html>
