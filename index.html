@@ -12,18 +12,14 @@
         <h1 data-cell="shrink">Calendar</h1>
     </header>
     <div data-grid="spacing">
-        <div class="events" data-cell="1of2">
-    
-        </div>
-    
         <div class="calendario" data-cell="shrink">
-            <div class="calendario-top" data-text="center">
+            <div class="calendario-top horizontal" data-text="center">
                 <h3 class="mes"></h3>
                 <p class="data"></p>
-                <div class="prev" data-grid="center">@Html.Icone("prev")</div>
-                <div class="next" data-grid="center">@Html.Icone("next")</div>
+                <div class="prev" data-grid="center"> < </div>
+                <div class="next" data-grid="center">></div>
             </div>
-            <div class="dia-semana" data-grid="row" data-text="center">
+            <div class="dia-semana horizontal" data-grid="row" data-text="center">
                 <div>Dom</div>
                 <div>Seg</div>
                 <div>Ter</div>
@@ -40,6 +36,6 @@
     </div>
 
 
-    <script src="Content/js/main.js"></script>
+    <script src="./Content/js/main.js"></script>
 </body>
 </html>
